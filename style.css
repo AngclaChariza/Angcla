@@ -71,11 +71,13 @@ header nav ul li a:hover {
 #about h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: #7d3f97; /* Adding a more consistent color */
 }
 
 #about p {
     font-size: 1.1rem;
     margin-bottom: 30px;
+    color: #666;
 }
 
 /* Team Section */
@@ -91,6 +93,7 @@ header nav ul li a:hover {
     margin-bottom: 20px;
     text-align: center;
     width: 100%;
+    color: #7d3f97; /* Matching header color for consistency */
 }
 
 /* Team Member Styling */
@@ -103,6 +106,12 @@ header nav ul li a:hover {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .team-photo {
@@ -120,6 +129,7 @@ header nav ul li a:hover {
 .team-description h4 {
     font-size: 1.8rem;
     margin-bottom: 10px;
+    color: #333;
 }
 
 .team-description p {
@@ -142,4 +152,28 @@ header nav ul li a:hover {
     .team-description {
         max-width: 100%;
     }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+/* Additional Button Styling */
+button {
+    background-color: #ff69b4; /* GlowTropa pink */
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e55b97; /* Slightly darker pink on hover */
 }
